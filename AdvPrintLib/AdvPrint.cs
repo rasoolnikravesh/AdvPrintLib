@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace AdvPrintLib
 {
-    public class Class1
+    public class AdvPrint
     {
+        public void Print(string Message)
+        {
+            Console.Write(Message);
+        }
     }
 }
