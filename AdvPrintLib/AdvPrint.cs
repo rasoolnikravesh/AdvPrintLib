@@ -8,18 +8,29 @@ namespace AdvPrintLib
 {
     public class AdvPrint
     {
-        public static void Print(Object obj)
+        public AdvColor BackColor { get; set; }
+ 
+        public AdvColor ForceColor { get; set; }
+
+        public static void Print(Object Message)
         {
-
-            BackColorCheck(AdvColor.Blue);
-            ForceColorCheck(AdvColor.Magenta);
-            Console.Write(obj);
-
+            Console.Write(Message);
         }
-        public static void PrintLn(Object Message, AdvColor Backcolor, AdvColor ForceColor)
+        public static void Print(Object Message, AdvColor Backcolor, AdvColor ForceColor)
         {
             BackColorCheck(Backcolor);
             ForceColorCheck(ForceColor);
+            Console.Write(Message);
+            Console.ResetColor();
+        }
+        public static void PrintLn(Object Message)
+        {
+            Console.WriteLine(Message);
+        }
+        public static void PrintLn(Object Message, AdvColor backcolor, AdvColor forceColor)
+        {
+            BackColorCheck(backcolor);
+            ForceColorCheck(forceColor);
             Console.WriteLine(Message);
             Console.ResetColor();
         }
@@ -91,5 +102,7 @@ namespace AdvPrintLib
 
             }
         }
+    }
+}
     
     
