@@ -16,6 +16,12 @@ namespace AdvPrintLib
         {
             Console.Write(Message);
         }
+        public static void Print(Object Message, AdvColor ForceColor)
+        {
+            ForceColorCheck(ForceColor);
+            Console.Write(Message);
+            Console.ResetColor();
+        }
         public static void Print(Object Message, AdvColor Backcolor, AdvColor ForceColor)
         {
             BackColorCheck(Backcolor);
