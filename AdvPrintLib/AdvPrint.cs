@@ -27,6 +27,12 @@ namespace AdvPrintLib
         {
             Console.WriteLine(Message);
         }
+        public static void PrintLn(Object Message, AdvColor forceColor)
+        {
+            ForceColorCheck(forceColor);
+            Console.WriteLine(Message);
+            Console.ResetColor();
+        }
         public static void PrintLn(Object Message, AdvColor backcolor, AdvColor forceColor)
         {
             BackColorCheck(backcolor);
@@ -65,6 +71,27 @@ namespace AdvPrintLib
                 case AdvColor.Gray:
                     Console.BackgroundColor = ConsoleColor.Gray;
                     break;
+                case AdvColor.DarkBlue:
+                    Console.BackgroundColor = ConsoleColor.DarkBlue;
+                    break;
+                case AdvColor.DarkCyan:
+                    Console.BackgroundColor = ConsoleColor.DarkCyan;
+                    break;
+                case AdvColor.DarkGray:
+                    Console.BackgroundColor = ConsoleColor.DarkGray;
+                    break;
+                case AdvColor.DarkGreen:
+                    Console.BackgroundColor = ConsoleColor.DarkGreen;
+                    break;
+                case AdvColor.DarkMagenta:
+                    Console.BackgroundColor = ConsoleColor.DarkMagenta;
+                    break;
+                case AdvColor.DarkRed:
+                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                    break;
+                case AdvColor.DarkYellow:
+                    Console.BackgroundColor = ConsoleColor.DarkYellow;
+                    break;
 
             }
         }
@@ -99,6 +126,28 @@ namespace AdvPrintLib
                 case AdvColor.Gray:
                     Console.ForegroundColor = ConsoleColor.Gray;
                     break;
+                case AdvColor.DarkBlue:
+                    Console.ForegroundColor = ConsoleColor.DarkBlue;
+                    break;
+                case AdvColor.DarkCyan:
+                    Console.ForegroundColor = ConsoleColor.DarkCyan;
+                    break;
+                case AdvColor.DarkGray:
+                    Console.ForegroundColor = ConsoleColor.DarkGray;
+                    break;
+                case AdvColor.DarkGreen:
+                    Console.ForegroundColor = ConsoleColor.DarkGreen;
+                    break;
+                case AdvColor.DarkMagenta:
+                    Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                    break;
+                case AdvColor.DarkRed:
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    break;
+                case AdvColor.DarkYellow:
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    break;
+
 
             }
         }
