@@ -17,6 +17,7 @@ namespace AdvPrintLib
         {
             ForceColorCheck(ForceColor);
             Console.Write(Message);
+            //rasool
             Console.ResetColor();
         }
         public static void Print(Object Message, AdvColor Backcolor, AdvColor ForceColor)
